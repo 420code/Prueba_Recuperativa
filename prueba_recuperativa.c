@@ -39,7 +39,7 @@ sem_t semaRow;
 
 
 
-void *cajaDisponible(void* arg){
+void *caja_Disponible(void* arg){
     
     int c=0;
     suma=0
@@ -77,7 +77,7 @@ void *cajaDisponible(void* arg){
     sem_post(&semaEntrance);
 }
 
-void *solicitarCaja(){
+void *solicitar_Caja(){
 	pthread_t tid;
     int oo;
 	tid = pthread_self();
